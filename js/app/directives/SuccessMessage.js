@@ -1,9 +1,10 @@
 function SuccessMessage() {
-	return {
-		template: '<div>Woohoo! Success!</div>'
-	};
+  return {
+    restrict: "E",
+    template: '<div>Woohoo! Success!</div>'
+  };
 }
 
 angular
-	.module('app')
-	.directive('successMessage', SuccessMessage);
+  .module('app')
+  .directive('successMessage', SuccessMessage);
